@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "368608239020",
+    "project_id": "watts-2d713",
+    "storage_bucket": "watts-2d713.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:368608239020:android:8d67f4f98cc52e11a96e09",
+        "android_client_info": {
+          "package_name": "com.dabloons.watts"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "368608239020-jhk4pcgrt6c1gshh9fab5miu62ogqcj1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-3neeXuymSWhV9FfVPr2AvK1hrUJFGzs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "368608239020-jhk4pcgrt6c1gshh9fab5miu62ogqcj1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
