@@ -1,16 +1,40 @@
 package com.dabloons.watts.util;
 
+import android.content.res.AssetManager;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Properties;
+import java.util.ResourceBundle;
 
 public class PropertiesUtil {
 
-    public static String LOCAL_PROPERTIES = "local.properties";
+//    private static String getPath(String path) {
+//        AssetManager am = context.getAssets
+//        String userDir = System.getProperty("user.dir").toString();
+//        Path initial = Paths.get("").toAbsolutePath().getParent();
+//
+//        String part1 = initial.toString();
+//        String part2 = Paths.get(path).toString();
+//        String ret = Paths.get(part1, part2).toString();
+//        return ret;\
+//        try {
+//            InputStream s
+//        } catch(Exception e) {
+//
+//        }
+
+//        return Paths.get(Paths.get("").toAbsolutePath().getParent().toString(), Paths.get(path).toString()).toString();
+//    }
+
+    public static String APP_PROPERTIES = "app.properties";
 
     public static String getProperty(String propertyFile, String propertyName) {
+        System.out.println("PropFileLocation: " + propertyFile);
         String result = null;
         InputStream inputStream = null;
         try {

@@ -28,8 +28,8 @@ import com.google.firebase.firestore.FirebaseFirestore;
 public class FirebaseUtil {
 
     /** Use emulators only in debug builds **/
-    private static final boolean sUseEmulators = PropertiesUtil.getPropertyAsBoolean(PropertiesUtil.LOCAL_PROPERTIES, "production");
-
+//    private static final boolean sUseEmulators = PropertiesUtil.getPropertyAsBoolean(PropertiesUtil.APP_PROPERTIES, "production");
+    private static final boolean sUseEmulators = true;
     private static FirebaseFirestore FIRESTORE;
     private static FirebaseAuth AUTH;
     private static AuthUI AUTH_UI;
