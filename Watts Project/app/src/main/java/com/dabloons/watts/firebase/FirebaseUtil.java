@@ -15,9 +15,8 @@
  */
 
 package com.dabloons.watts.firebase;
-import com.dabloons.watts.util.PropertiesUtil;
+import com.dabloons.watts.util.ConfigUtil;
 import com.firebase.ui.auth.AuthUI;
-import com.google.common.io.Resources;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.FirebaseFirestore;
 
@@ -28,11 +27,12 @@ import com.google.firebase.firestore.FirebaseFirestore;
 public class FirebaseUtil {
 
     /** Use emulators only in debug builds **/
-//    private static final boolean sUseEmulators = PropertiesUtil.getPropertyAsBoolean(PropertiesUtil.APP_PROPERTIES, "production");
-    private static final boolean sUseEmulators = true;
+    private static final boolean sUseEmulators = !ConfigUtil.getPropertyAsBoolean("production");
+
     private static FirebaseFirestore FIRESTORE;
     private static FirebaseAuth AUTH;
     private static AuthUI AUTH_UI;
+
 
     public static FirebaseFirestore getFirestore() {
         if (FIRESTORE == null) {
